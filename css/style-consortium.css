@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.3;
+    font-family: 'Roboto', sans-serif;
+    color: #3c3b3b;
+}
+
+a {
+    text-decoration: none;
+}
+
+#search {
+    background: url("../img/bg-img.jpg") no-repeat center center;
+    background-size: cover;
+    height: 75vh;
+    padding-top: 50px;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+.perso {
+    background-color: #e79fe4;
+    color: white;
+    height: 40px
+}
+
+#search form {
+    background-color: rgba(60, 59, 59, 0.5);
+    color: white;
+
+}
+
+#search .form-select,
+#search .form-control {
+    margin: 5px;
+    flex: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 120px;
+}
+
+.carousel-control-prev {
+    left: -75px;
+}
+
+.carousel-control-next {
+    right: -75px;
+}
+
+#vente,
+#location {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    flex: 1;
+
+}
+
+#vente {
+    background-image: url("../img/vente.jpg");
+}
+
+#vente>div,
+#location>div {
+    right: 0;
+}
+
+#vente>div:hover,
+#location>div:hover {
+    width: 100%;
+    cursor: pointer;
+}
+
+#location {
+    background-image: url("../img/location.jpg");
+}
+
+
+h3 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    position: relative;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+h2 strong {
+    font-weight: 500;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    z-index: 3000;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 3px;
+    background-color: white;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+section:nth-child(3) h2::after {
+    background-color: black;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    #search .form-select,
+    #search .form-control {
+        flex: auto;
+    }
+
+    #search {
+        padding-top: 0;
+    }
+
+    #vente,
+    #location {
+        flex: auto;
+    }
+
+    #vente,
+    #location {
+        background-size: cover;
+        background-position: center center;
+    }
+
+}

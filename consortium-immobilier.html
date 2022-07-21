@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Création site immobilier creer sites agence immobiliere</title>
+    <meta name="description" content="Créer ou louer votre site d'agence immobilière de qualité professionnelle.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style-consortium.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+
+<body>
+
+    <header div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" height="80px" width="80px" class="rounded" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="#">Agence</a>
+                        </li>
+                        <li class="nav-item dropdown p-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Vente
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown p-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Location
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="#">Estimation</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="#">Alerte Email</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid m-0 p-0">
+
+        <!-- section de recherche -->
+
+        <section id="search">
+            <div class="container mx-auto mt-5">
+                <h1 class="p-5 my-5 text-center">
+                    Bienvenue chez vous
+                </h1>
+
+                <form class="form row justify-content-around align-items-center p-4 mx-auto my-5">
+
+                    <select name="search[transaction]" id="" class=" col-md-2 form-select">
+                        <option value="location">location</option>
+                        <option value="vente">vente</option>
+                        <option value="location">saisonnier</option>
+                    </select>
+
+                    <select name="search[bien]" class="col-sm-6 col-md-2 form-select">
+                        <option value="appartement">appartement</option>
+                        <option value="maison" selected>maison</option>
+                        <option value="terrain">terrain</option>
+                    </select>
+
+                    <input type="text" class="col-sm-6 col-md-2 pt-2 form-control" name="search[ville]" id="ville"
+                        cols="30" rows="1" placeholder="ville"></input>
+
+                    <input type="text" class="rounded col-sm-6 col-md-2 pt-2 form-control" name="search[prix]" id="prix"
+                        cols="30" rows="1" placeholder="prix"></input>
+                    <button class="btn col-md-2 text-white py-0 rounded perso">Rechercher</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- fin recherche -->
+
+        <section class="container row justify-content-around p-5 my-5 mx-auto">
+            <div class="col-md-3 text-center">
+                <img src="./img/picto-acheter.png" alt="">
+                <h3>Acheter un bien</h3>
+            </div>
+            <div class="col-md-3 text-center"> <img src="./img/picto-vendre.png" alt="">
+                <h3>Vendre un bien</h3>
+            </div>
+            <div class="col-md-3 text-center"> <img src="./img/picto-louer.png" alt="">
+                <h3>Louer un bien</h3>
+            </div>
+            <div class="col-md-3 text-center"> <img src="./img/picto-deposer.png" alt="">
+                <h3>Proposer un bien</h3>
+            </div>
+        </section>
+
+
+        <!-- carousel slide with cards -->
+
+        <section class="py-5  bg-light">
+            <div class="container">
+
+
+                <!-- carousel starting point -->
+                <div id="demo" class="carousel slide mx-5 position-relative" data-bs-ride="carousel">
+
+                    <h2 class="text-center">
+                        Nos dernières <strong>annonces</strong>
+                    </h2>
+                    <div class="carousel-inner mx-auto">
+
+                        <!-- carousel set 1 -->
+                        <div class="carousel-item active text-center">
+                            <!-- 3 columns set 1 -->
+                            <div class="row justify-content-around gx-3">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="" src="/img/slide1.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="" src="./img/slide2.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="" src="./img/slide3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel set 2 (ici, les mêmes images) -->
+                        <div class="carousel-item">
+                            <!-- 3 columns set 2 -->
+                            <div class="row mx-auto px-3">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="" src="./img/slide1.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="" src="./img/slide2.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="" src="./img/slide3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end carousel set 2 -->
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev position-absolute" type="button" data-bs-target="#demo"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark"></span>
+                    </button>
+                    <button class="carousel-control-next position-absolute" type="button" data-bs-target="#demo"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark"></span>
+                    </button>
+                    <!-- end carousel -->
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark text-center text-white mx-auto p-5">
+            <div class="container">
+                <h2>Notre
+                    <strong>Agence</strong>
+                </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veritatis repudiandae temporibus,
+                    cum,
+                    nostrum consectetur suscipit repellat distinctio corporis atque, autem itaque ut recusandae enim
+                    laudantium
+                    provident! Voluptatum, quas beatae!</p>
+                <button class="btn perso px-5 mt-5">En savoir +</button>
+            </div>
+        </section>
+
+        <section class="p-5 bg-light">
+
+            <div class="container mx-auto row justify-content-around g-3">
+                <div class="col-md-6">
+                    <div id="location" class="position-relative">
+                        <div
+                            class="bg-dark bg-opacity-50 text-white position-absolute h-100 text-center d-flex flex-column justify-content-center px-2">
+                            <h2>Location</h2>
+                            <p><a href="" class="text-white">Voir les annonces</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="vente" class="position-relative">
+                        <div
+                            class="bg-dark bg-opacity-50 text-white position-absolute h-100 text-center d-flex flex-column justify-content-center px-2">
+                            <h2>
+                                Vente
+                            </h2>
+                            <p><a href="" class="text-white">Voir les annonces</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="container-fluid bg-dark text-center text-white pt-5 px-0">
+
+        <a href="#">
+            <img src="./img/logo.svg" height="80px" width="80px" class="rounded" alt="">
+        </a>
+        <hr>
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="col-md-3">Nous suivre sur les réseaux sociaux
+                <div>
+                    <i class="fa-brands fa-facebook fa-2x m-2"></i>
+                    <i class="fa-brands fa-linkedin fa-2x m-2"></i>
+                    <i class="fa-brands fa-twitter fa-2x m-2"></i>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <a href="" class="btn perso">Nous Contacter</a>
+            </div>
+        </div>
+
+        <div id="mentions" class="bg-black text-white pt-3">
+
+            <p>
+                <small>Mentions légales et honoraires</small>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
