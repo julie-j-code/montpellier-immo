@@ -1,4 +1,4 @@
-* {
+*, .container-fluid {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -65,7 +65,6 @@ h1 {
     background-repeat: no-repeat;
     height: 400px;
     flex: 1;
-
 }
 
 #vente {
@@ -75,12 +74,15 @@ h1 {
 #vente>div,
 #location>div {
     right: 0;
+    width: 25%;
+    transition:0.5s ease-in;
 }
 
 #vente>div:hover,
 #location>div:hover {
     width: 100%;
     cursor: pointer;
+
 }
 
 #location {
