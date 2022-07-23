@@ -1,3 +1,7 @@
+:root {
+    --primary: #e79fe4;
+}
+
 *,
 .container-fluid {
     padding: 0;
@@ -15,10 +19,17 @@ a {
     text-decoration: none;
 }
 
-nav .dropdown-menu{
+nav .dropdown-menu {
     height: fit-content;
-    background-color: #e79fe4;
+    background-color: var(--primary);
 }
+
+nav .dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: white !important;
+    transition: 0.2s ease-in;
+}
+
 
 #search {
     background: url("../img/bg-img.jpg") no-repeat center center;
@@ -73,13 +84,13 @@ h2::after {
     bottom: 0;
 }
 
-section{
+section {
     opacity: 0;
     transition: all 1s ease-out;
 }
 
 .perso {
-    background-color: #e79fe4;
+    background-color: var(--primary);
     color: white;
     height: 40px;
     transition: 1s;
@@ -87,8 +98,8 @@ section{
 
 .perso:hover {
     background-color: #fff;
-    color:#e79fe4;
-  }
+    color: var(--primary);
+}
 
 
 #search form {
@@ -168,7 +179,11 @@ section:nth-child(3) h2::after {
 
     #vente>div,
     #location>div {
-        width:100%;        
+        width: 100%;
+    }
+
+    section:nth-child(4) .perso {
+        height: fit-content;
     }
 
 }
