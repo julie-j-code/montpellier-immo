@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+nav .dropdown-menu{
+    height: fit-content;
+    background-color: #e79fe4;
+}
+
 #search {
     background: url("../img/bg-img.jpg") no-repeat center center;
     background-size: cover;
@@ -76,8 +81,15 @@ section{
 .perso {
     background-color: #e79fe4;
     color: white;
-    height: 40px
+    height: 40px;
+    transition: 1s;
 }
+
+.perso:hover {
+    background-color: #fff;
+    color:#e79fe4;
+  }
+
 
 #search form {
     background-color: rgba(60, 59, 59, 0.5);
