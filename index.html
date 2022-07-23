@@ -8,10 +8,12 @@
     <meta name="description" content="Créer ou louer votre site d'agence immobilière de qualité professionnelle.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style-consortium.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style-consortium.css" rel="stylesheet" media="all">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
@@ -124,16 +126,16 @@
 
         <section class="container row justify-content-around p-5 my-5 mx-auto">
             <div class="col-md-3 text-center">
-                <img src="./img/picto-acheter.png" alt="">
+                <img src="./img/picto-acheter.png" loading="lazy" alt="acheter un bien">
                 <h3>Acheter un bien</h3>
             </div>
-            <div class="col-md-3 text-center"> <img src="./img/picto-vendre.png" alt="">
+            <div class="col-md-3 text-center"> <img src="./img/picto-vendre.png" loading="lazy" alt="vendre un bien">
                 <h3>Vendre un bien</h3>
             </div>
-            <div class="col-md-3 text-center"> <img src="./img/picto-louer.png" alt="">
+            <div class="col-md-3 text-center"> <img src="./img/picto-louer.png" loading="lazy" alt="louer un bien">
                 <h3>Louer un bien</h3>
             </div>
-            <div class="col-md-3 text-center"> <img src="./img/picto-deposer.png" alt="">
+            <div class="col-md-3 text-center"> <img src="./img/picto-deposer.png" loading="lazy" alt="proposer un bien">
                 <h3>Proposer un bien</h3>
             </div>
         </section>
@@ -150,7 +152,7 @@
                     <h2 class="text-center">
                         Nos dernières <strong>annonces</strong>
                     </h2>
-                    <div class="carousel-inner mx-auto">
+                    <div class="carousel-inner mx-auto mt-5">
 
                         <!-- carousel set 1 -->
                         <div class="carousel-item active text-center">
@@ -218,7 +220,8 @@
                 <h2>Notre
                     <strong>Agence</strong>
                 </h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veritatis repudiandae temporibus,
+                <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veritatis repudiandae
+                    temporibus,
                     cum,
                     nostrum consectetur suscipit repellat distinctio corporis atque, autem itaque ut recusandae enim
                     laudantium
@@ -235,9 +238,8 @@
                         <div
                             class="bg-dark bg-opacity-50 text-white position-absolute h-100 text-center d-flex flex-column justify-content-center px-2">
                             <h2>Location</h2>
-                            <p><a href="" class="text-white">Voir les annonces</a>
+                            <p class="mt-4"><a href="" class="text-white">Voir les annonces</a>
                             </p>
-
                         </div>
                     </div>
                 </div>
@@ -249,7 +251,7 @@
                             <h2>
                                 Vente
                             </h2>
-                            <p><a href="" class="text-white">Voir les annonces</a>
+                            <p class="mt-4"><a href="" class="text-white">Voir les annonces</a>
                             </p>
                         </div>
                     </div>
@@ -301,7 +303,6 @@
         </div>
 
     </footer>
-
 
 </body>
 

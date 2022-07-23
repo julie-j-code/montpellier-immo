@@ -1,4 +1,5 @@
-*, .container-fluid {
+*,
+.container-fluid {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,14 +20,58 @@ a {
     background-size: cover;
     height: 75vh;
     padding-top: 50px;
+    background-attachment: fixed;
 }
 
 h1 {
     color: white;
-    text-shadow: 2px 2px 4px #000000;
+    opacity: 0;
+    font-size: calc(1em + 4vw);
+    font-weight: 400;
+    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 2s ease-out;
 }
 
+h3 {
+    font-size: calc(1rem + 1vw);
+    font-weight: 400;
+    margin-top: calc(1rem + 1vw);
+}
 
+h2 {
+    font-size: calc(1.2rem + 1vw);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2 strong {
+    font-weight: 500;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -1rem;
+    height: 3px;
+    background-color: white;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    bottom: 0;
+}
+
+section{
+    opacity: 0;
+    transition: all 1s ease-out;
+}
 
 .perso {
     background-color: #e79fe4;
@@ -37,7 +82,6 @@ h1 {
 #search form {
     background-color: rgba(60, 59, 59, 0.5);
     color: white;
-
 }
 
 #search .form-select,
@@ -63,6 +107,7 @@ h1 {
 #location {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     height: 400px;
     flex: 1;
 }
@@ -74,56 +119,23 @@ h1 {
 #vente>div,
 #location>div {
     right: 0;
-    width: 25%;
-    transition:0.5s ease-in;
+    width: 35%;
+    transition: 0.5s ease-in;
 }
 
 #vente>div:hover,
 #location>div:hover {
     width: 100%;
     cursor: pointer;
-
 }
 
 #location {
     background-image: url("../img/location.jpg");
 }
 
-
-h3 {
-    font-size: 1rem;
-}
-
-h2 {
-    font-size: 1.4rem;
-    position: relative;
-    font-weight: 200;
-    text-transform: uppercase;
-    padding: 1rem 0;
-}
-
-h2 strong {
-    font-weight: 500;
-}
-
-h2::after {
-    content: "";
-    position: absolute;
-    z-index: 3000;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    height: 3px;
-    background-color: white;
-    width: 50px;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s ease-in-out;
-}
-
 section:nth-child(3) h2::after {
     background-color: black;
 }
-
 
 
 @media screen and (max-width:768px) {
@@ -142,10 +154,9 @@ section:nth-child(3) h2::after {
         flex: auto;
     }
 
-    #vente,
-    #location {
-        background-size: cover;
-        background-position: center center;
+    #vente>div,
+    #location>div {
+        width:100%;        
     }
 
 }
